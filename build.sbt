@@ -10,5 +10,7 @@ unmanagedJars in Compile := (baseDirectory.value ** "*.jar").classpath
 
 libraryDependencies ++= Seq(
   "com.github.ozlerhakan" % "poiji" % "1.11",
-  "org.hibernate" % "hibernate-entitymanager" % "5.2.16.Final"
+  "org.hibernate" % "hibernate-entitymanager" % "5.2.16.Final",
+  "com.typesafe" % "config" % "1.3.3",
+  "commons-io" % "commons-io" % "2.6"
 )

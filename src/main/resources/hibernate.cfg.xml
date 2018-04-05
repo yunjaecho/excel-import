@@ -6,7 +6,7 @@
     <session-factory>
         <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
         <property name="hibernate.connection.driver_class">com.tmax.tibero.jdbc.TbDriver</property>
-        <property name="hibernate.connection.url">jdbc:tibero:thin:@192.168.100.136:8629:tibero</property>
+        <property name="hibernate.connection.url">jdbc:tibero:thin:@192.168.100.128:8629:tibero</property>
         <property name="hibernate.connection.username">ATEAT</property>
         <property name="hibernate.connection.password">atqwaszx12</property>
         <property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
@@ -14,5 +14,6 @@
 
         <mapping class="com.yunjae.impexcel.domain.Employer"></mapping>
         <mapping class="com.yunjae.impexcel.domain.Partner"></mapping>
+        <mapping class="com.yunjae.impexcel.domain.PartnerFile"></mapping>
     </session-factory>
 </hibernate-configuration>
