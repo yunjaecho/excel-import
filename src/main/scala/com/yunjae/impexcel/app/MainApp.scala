@@ -72,14 +72,14 @@ object MainApp extends App {
 
       if (partnerFile.busFile != null && !partnerFile.busFile.isEmpty) {
         val sourceUrl = partnerFile.busFile
-        val targetPath =  "b2c_accountFile_" + partnerFile.busFile.substring(partnerFile.busFile.lastIndexOf("/")+1)
+        val targetPath =  "b2c_busFile_" + partnerFile.busFile.substring(partnerFile.busFile.lastIndexOf("/")+1)
         partnerFile.busPath = targetPath
         saveFile(sourceUrl, rootTargetPath + File.separator + targetPath)
       }
 
       if (partnerFile.naturalFile != null && !partnerFile.naturalFile.isEmpty) {
-        val sourceUrl = partnerFile.accountFile
-        val targetPath = "b2c_accountFile_" + partnerFile.naturalFile.substring(partnerFile.naturalFile.lastIndexOf("/")+1)
+        val sourceUrl = partnerFile.naturalFile
+        val targetPath = "b2c_naturalFile_" + partnerFile.naturalFile.substring(partnerFile.naturalFile.lastIndexOf("/")+1)
         partnerFile.naturalPath = targetPath
         saveFile(sourceUrl, rootTargetPath + File.separator + targetPath)
       }
