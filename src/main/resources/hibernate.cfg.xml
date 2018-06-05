@@ -15,5 +15,6 @@
         <mapping class="com.yunjae.impexcel.domain.Employer"></mapping>
         <mapping class="com.yunjae.impexcel.domain.Partner"></mapping>
         <mapping class="com.yunjae.impexcel.domain.PartnerFile"></mapping>
+        <mapping class="com.yunjae.impexcel.domain.Item"></mapping>
     </session-factory>
 </hibernate-configuration>
